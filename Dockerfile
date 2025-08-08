@@ -1,7 +1,7 @@
 FROM openjdk:11 AS builder
 WORKDIR /app
 COPY . .
-RUN javac -z+multiply.java
+RUN javac multiply.java
 #CMD [ "java", "multiplication.multiply" ]
 
 #============second build light weight=========
